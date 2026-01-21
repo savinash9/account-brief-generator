@@ -1,0 +1,20 @@
+{
+  "name": "sfdc-mcp-server",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npm run build && node dist/index.js",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "dotenv": "16.4.5",
+    "jsforce": "1.11.0"
+  },
+  "devDependencies": {
+    "@types/node": "20.12.7",
+    "ts-node": "10.9.2",
+    "typescript": "5.4.5"
+  }
+}
