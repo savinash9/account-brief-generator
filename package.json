@@ -1,0 +1,13 @@
+{
+  "name": "account-brief-generator",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "servers/*"
+  ],
+  "scripts": {
+    "dev:web": "npm run dev --workspace apps/web",
+    "dev:sfdc-mcp": "npm run dev --workspace servers/sfdc-mcp",
+    "build": "npm run build --workspace apps/web && npm run build --workspace servers/sfdc-mcp"
+  }
+}
